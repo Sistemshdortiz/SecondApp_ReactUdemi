@@ -3,11 +3,13 @@ import './index.css'
 const Card = (props) => {
 
     return (
-        <ul id="concepts">
-            <li className="concept">
-            {props.children}
-            </li>
-        </ul>
+
+        <li className="concept">
+            <img src={props.image} alt={props.title} />
+            <h2>TODO: {props.title}</h2>
+            <p>TODO: {props.description}</p>
+        </li>
+
     )
 }
 
